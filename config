@@ -222,6 +222,6 @@ bindsym $mod+shift+x exec /home/jw00241/.config/i3/lock.sh
 for_window [class="Spotify"] move to workspace $ws10
 for_window [class="brave"] move to workspace $ws2
 
-exec_always setxkbmap -option ctrl:swapcaps
+exec_always setxkbmap -option ctrl:nocaps
 exec_always feh --bg-scale /home/jw00241/Pictures/Wal/zentree.png
 exec compton -f
