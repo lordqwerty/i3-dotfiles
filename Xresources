@@ -1,43 +1,75 @@
-!! Appearance
-urxvt.termName: rxvt-unicode
-urxvt.scrollBar: false
-urxvt.saveLines: 1000000
+! special
+*.foreground:   #f1ebeb
+*.background:   #272822
+*.cursorColor:  #f1ebeb
 
-URxvt*background: #ffffff
-URxvt*foreground: #000000
 ! black
-URxvt.color0  : #000000
-URxvt.color8  : #555555
+*.color0:       #48483e
+*.color8:       #76715e
+
 ! red
-URxvt.color1  : #AA0000
-URxvt.color9  : #FF5555
+*.color1:       #dc2566
+*.color9:       #fa2772
+
 ! green
-URxvt.color2  : #00AA00
-URxvt.color10 : #55FF55
+*.color2:       #8fc029
+*.color10:      #a7e22e
+
 ! yellow
-URxvt.color3  : #AA5500
-URxvt.color11 : #FFFF55
+*.color3:       #d4c96e
+*.color11:      #e7db75
+
 ! blue
-URxvt.color4  : #0000AA
-URxvt.color12 : #5555FF
+*.color4:       #55bcce
+*.color12:      #66d9ee
+
 ! magenta
-URxvt.color5  : #AA00AA
-URxvt.color13 : #FF55FF
+*.color5:       #9358fe
+*.color13:      #ae82ff
+
 ! cyan
-URxvt.color6  : #00AAAA
-URxvt.color14 : #55FFFF
+*.color6:       #56b7a5
+*.color14:      #66efd5
+
 ! white
-URxvt.color7  : #AAAAAA
-URxvt.color15 : #FFFFFF
+*.color7:       #acada1
+*.color15:      #cfd0c2
 
-URxvt*font: xft:Hack-Regular:pixelsize=13
-URxvt*boldFont: xft:Hack-Regular:pixelsize=13
-urxvt.letterSpace: -1
 
-URxvt.perl-ext-common : default,matcher,font-size
-URxvt.urlLauncher     : firefox
-URxvt.matcher.button  : 1
+URxvt.intensityStyles:	false
+URxvt.background:       #272822
+URxvt.depth:		32
+URxvt.font: 		xft:monospace:size=11
+URxvt.scrollBar:	false
+URxvt.cursorColor:	white
 
-!! Change font size on Control-Plus/Minus
-URxvt.keysym.Control-0x2b: perl:font-size:increase
-URxvt.keysym.Control-0x2d: perl:font-size:decrease
+!! Extensions
+URxvt.perl-ext-common:	default,matcher,resize-font,url-select,keyboard-select
+URxvt.colorUL:		#4682B4
+!! url-select
+URxvt.keysym.M-u:	perl:url-select:select_next
+URxvt.url-select.launcher: firefox
+URxvt.url-select.underline: true
+!! keyboard-select:
+URxvt.keysym.M-Escape: perl:keyboard-select:activate
+!! resize-font
+URxvt.resize-font.smaller:	C-Down
+URxvt.resize-font.bigger:	C-Up
+!! Matcher
+URxvt.url-launcher:	firefox
+URxvt.matcher.button:	1
+
+! Arc Dark
+rofi.color-enabled: true
+rofi.color-window: #383c4a, #383c4a, #383c4a
+rofi.color-normal: #404552, #ffffff, #404552, #304d72, #ffffff
+rofi.color-active: #fdf6e3, #268bd2, #eee8d5, #268bd2, #fdf6e3
+rofi.color-urgent: #fdf6e3, #dc322f, #eee8d5, #dc322f, #fdf6e3
+
+rofi.fake-transparency:	true
+rofi.lines:		3
+rofi.bw:		0
+rofi.opacity:	"80"
+rofi.hide-scrollbar:	true
+rofi.width:		30
+rofi.separator-style: solid
