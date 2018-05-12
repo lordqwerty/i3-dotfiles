@@ -211,7 +211,6 @@ set $netrefresh --no-startup-id sudo systemctl restart NetworkManager
 set $suspend sudo systemctl suspend
 
 # Key bindings 
-
 bindsym $mod+Shift+BackSpace exec "i3-nagbar -t warning -m 'Are you sure you want to reboot?' -b 'Yes, reboot' '$reboot'"
 bindsym $mod+Shift+x exec "i3-nagbar -t warning -m 'Are you sure you want to shutdown?' -b 'Yes, shutdown' '$shutdown'"
 bindsym $mod+F4 exec --no-startup-id $suspend
@@ -225,6 +224,7 @@ bindsym Shift+Print exec --no-startup-id scrot -u
 bindsym XF86AudioRaiseVolume exec amixer -q -D pulse sset Master 5%+ && pkill -RTMIN+1 i3blocks 
 bindsym XF86AudioLowerVolume exec amixer -q -D pulse sset Master 5%- && pkill -RTMIN+1 i3blocks
 bindsym XF86AudioMute exec amixer -q -D pulse sset Master toggle && pkill -RTMIN+1 i3blocks
+bindsym XF86AudioMicMute exec amixer set Capture toggle && pkill -RTMIN+1 i3blocks
 
 # Screen brightness controls
 bindsym XF86MonBrightnessUp exec light -A 5 # increase screen brightness
