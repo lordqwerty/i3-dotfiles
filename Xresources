@@ -35,7 +35,7 @@
 *.color7:       #acada1
 *.color15:      #cfd0c2
 
-
+URxvt.color12: rgb:5c/5c/ff
 URxvt.intensityStyles:	false
 URxvt.background:       #272822
 URxvt.depth:		32
