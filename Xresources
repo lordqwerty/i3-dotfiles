@@ -1,4 +1,5 @@
 ! special
+!
 *.foreground:   #f1ebeb
 *.background:   #272822
 *.cursorColor:  #f1ebeb
@@ -48,15 +49,12 @@ URxvt.perl-ext-common:	default,matcher,resize-font,url-select,keyboard-select
 URxvt.colorUL:		#4682B4
 !! url-select
 URxvt.keysym.M-u:	perl:url-select:select_next
-URxvt.url-select.launcher: firefox
+URxvt.url-select.launcher: google-chrome
 URxvt.url-select.underline: true
 !! keyboard-select:
 URxvt.keysym.M-Escape: perl:keyboard-select:activate
-!! resize-font
-URxvt.resize-font.smaller:	C-Down
-URxvt.resize-font.bigger:	C-Up
 !! Matcher
-URxvt.url-launcher:	firefox
+URxvt.url-launcher: google-chrome	
 URxvt.matcher.button:	1
 
 ! Arc Dark
