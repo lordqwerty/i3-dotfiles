@@ -207,8 +207,9 @@ exec_always --no-startup-id feh --bg-scale /home/jw00241/Pictures/Wal/zentree.pn
 #SYSTEMD
 set $shutdown shutdown -h now
 set $reboot reboot
+set $lock dm-tool lock
 set $netrefresh --no-startup-id sudo systemctl restart NetworkManager
-set $suspend ~/.config/i3/lock.sh && systemctl suspend
+set $suspend dm-tool lock && systemctl suspend
 
 # Key bindings 
 bindsym $mod+Shift+BackSpace exec "i3-nagbar -t warning -m 'Are you sure you want to reboot?' -b 'Yes, reboot' '$reboot'"
