@@ -40,7 +40,9 @@ URxvt.color12: rgb:5c/5c/ff
 URxvt.intensityStyles:	false
 URxvt.background:       #272822
 URxvt.depth:		32
-URxvt.font: 		xft:monospace:size=11
+URxvt.font: 		xft:NotoMono-Regular:pixelsize=13:antialias=true:hinting=true,\
+                    xft:PowerlineSymbols:pixelsize=13:antialias=true:style=medium,\
+                    -*-unifont-*-*-*-*-*-*-*-*-*-*-*-*
 URxvt.scrollBar:	false
 URxvt.cursorColor:	white
 
